@@ -1,0 +1,11 @@
+[
+  {"time": "2026-10-23T04:02:30.698Z", "run_id": "7a121d7f75a3", "who": "guest", "event": "tool_call", "tool": "about_me", "args": "{}", "result": "{\"logged_in\": false}"},
+  {"time": "2026-10-23T04:02:32.874Z", "run_id": "7a121d7f75a3", "who": "guest", "event": "stop", "stop_reason": "answered (tool_call)", "tools_used": ["about_me"], "model_requests": 2},
+  {"time": "2026-10-23T04:02:35.167Z", "run_id": "8b0c8210b4b0", "who": "guest", "event": "tool_call", "tool": "search_products", "args": "{\"garment_type\": \"pullover hoodie\", \"size\": \"M\", \"limit\": 6, \"sort_by\": \"relevance\"}", "result": "6 product(s): Basic Hoodie Big Yale, Champion Reverse Weave Hoodie 1, District Vit Hoodie Vintage Bulldog, ..."},
+  {"time": "2026-10-23T04:02:38.807Z", "run_id": "8b0c8210b4b0", "who": "guest", "event": "stop", "stop_reason": "answered (tool_call)", "tools_used": ["search_products"], "model_requests": 2},
+  {"time": "2026-10-23T04:02:41.116Z", "run_id": "ab4e12138927", "who": "guest", "event": "stop", "stop_reason": "blocked_by_content_filter", "tools_used": [], "model_requests": null},
+  {"time": "2026-10-23T04:02:43.267Z", "run_id": "27cedadad826", "who": "guest", "event": "tool_call", "tool": "account_help", "args": "{\"topic\": \"gift_certificates\"}", "result": "{\"topic\": \"gift_certificates\", \"steps\": [\"Open Gift Certificates in the menu.\", \"A parent or loved one picks an amount, enters the student's name and email, an…"},
+  {"time": "2026-10-23T04:02:45.266Z", "run_id": "27cedadad826", "who": "guest", "event": "stop", "stop_reason": "answered (tool_call)", "tools_used": ["account_help"], "model_requests": 2},
+  {"time": "2026-10-23T04:02:46.923Z", "run_id": "fad127551b00", "who": "guest", "event": "tool_call", "tool": "about_me", "args": "{}", "result": "{\"logged_in\": false}"},
+  {"time": "2026-10-23T04:02:49.051Z", "run_id": "fad127551b00", "who": "guest", "event": "stop", "stop_reason": "answered (tool_call)", "tools_used": ["about_me"], "model_requests": 2}
+]

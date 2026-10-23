@@ -1,0 +1,22 @@
+# secrets: never commit these
+.env
+.env.*
+!.env.example
+
+# the data pack (database and product photos) is handed out separately, see data/README.md
+data/*
+!data/README.md
+
+# installed or generated: recreate with the commands in README.md
+.venv/
+node_modules/
+dist/
+__pycache__/
+.pytest_cache/
+*.pyc
+
+# local files
+backend/outbox/
+*.log
+.DS_Store
+.claude/

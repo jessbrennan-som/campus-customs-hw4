@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Campus Customs: App Check</title>
+  <style>
+    body { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; color: #1b2430; max-width: 900px; margin: 0 auto; padding: 32px 20px 64px; line-height: 1.5; }
+    h1, h2, h3 { font-family: Georgia, "Times New Roman", serif; color: #00356b; }
+    h2 { border-bottom: 3px solid #63aaff; padding-bottom: 6px; margin-top: 48px; }
+    figure { margin: 16px 0; }
+    img { max-width: 100%; border: 1px solid #dcdfe4; border-radius: 8px; }
+    figcaption { font-size: 0.9rem; color: #4a4a4a; margin-top: 6px; }
+    .proves { background: #eaf1fa; border-left: 4px solid #00356b; padding: 10px 14px; border-radius: 4px; }
+    .note { color: #4a4a4a; font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+  <h1>Campus Customs: App Check</h1>
+  <p>Three screenshots from the running Campus Customs website, taken with a throwaway copy of the database so no real customer data was used. Handsome Dan is the shop's chatbot.</p>
+
+  <h2>Check 1: Chat checks inventory and price</h2>
+  <h3>Screenshot 1: Handsome Dan answers a stock and price question</h3>
+  <figure>
+    <img src="app_check_images/1-chat-inventory-and-price.png" alt="The chat panel where a shopper asks how many of the Basic Hoodie Big Yale are in stock in medium and what it costs. Handsome Dan answers $68.00 and 5 left in size M, and the hoodie's card appears on the page.">
+    <figcaption>File: <code>output/app_check_images/1-chat-inventory-and-price.png</code>. A shopper asks, "How many of this hoodie are in stock in medium, and what does it cost?" Handsome Dan replies that the Basic Hoodie Big Yale is $68.00 and size M has 5 left.</figcaption>
+  </figure>
+  <p class="proves"><strong>What this proves:</strong> The chatbot answers from the live database, not from memory: it quotes the exact price ($68.00) and the exact stock in the shopper's size (5 left in M), which the shop checks against what its tools returned. It also shows the chat understands "this hoodie" from the page the shopper is on.</p>
+
+  <h2>Check 2: Dynamic search result cards from the chat</h2>
+  <h3>Screenshot 2: Product cards appear on the page when a category is mentioned</h3>
+  <figure>
+    <img src="app_check_images/2-chat-search-result-cards.png" alt="After a shopper types 'Show me your jackets' in the chat, a 'Yale jackets' section of product cards with photos, names, prices and View product buttons appears on the page, and Handsome Dan's short reply is in the chat panel.">
+    <figcaption>File: <code>output/app_check_images/2-chat-search-result-cards.png</code>. The shopper types "Show me your jackets". Eight jacket cards (photo, name, price, short description and a View product button) appear on the page under "Yale jackets", while the chat reply stays short.</figcaption>
+  </figure>
+  <p class="proves"><strong>What this proves:</strong> Mentioning a category in the chat turns into real product cards on the page, with photo, name, price and a link to each full product page, filled in from the database rather than from the AI's words. The chat reply stays short because the cards carry the detail.</p>
+
+  <h2>Check 3: Gift certificates</h2>
+  <h3>Screenshot 3: A gift certificate is bought and the code is issued</h3>
+  <figure>
+    <img src="app_check_images/3-gift-certificate.png" alt="The Gift Certificates page confirmation: a $100 gift certificate for Maya Rivera was emailed, the code is shown once, and a note says no payment is taken and everything bought with it is 10% off. The yellow banner and the Gift Certificates menu item are visible at the top.">
+    <figcaption>File: <code>output/app_check_images/3-gift-certificate.png</code>. After a parent fills in the form, the confirmation shows the $100 certificate, the one-time code, the "class project, no payment taken" note and the 10% off message. The promotional banner and the Gift Certificates menu item are visible at the top. (The email addresses and code are made-up test data.)</figcaption>
+  </figure>
+  <p class="proves"><strong>What this proves:</strong> The gift certificate feature works from start to finish: a parent can buy a certificate for a student, a one-time code is issued, and the 10% off promotion is advertised in the banner and on the page. The page also states plainly that this class project takes no payment, so no card details are collected.</p>
+
+  <p class="note">Screenshots are in <code>output/app_check_images/</code> and linked above with relative paths.</p>
+</body>
+</html>
